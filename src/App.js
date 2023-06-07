@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { useState } from "react";
+
+const options = [
+  {
+    label: "bon",
+    value: "bon",
+  },
+  {
+    label: "beo",
+    value: "beo",
+  },
+];
 
 function App() {
+  const [selected, setSelected] = useState();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <div>Block</div>
+      </div>
+
+      <div>
+        <div>Inline</div>
+        <div>lorem</div>
+        <div>lorem6666</div>
+        <div>lorem1111</div>
+        <div>lorem22222</div>
+        <div>lorem3333333</div>
+      </div>
+
+      <div>
+        <div>None</div>
+      </div>
+    </>
   );
 }
 
